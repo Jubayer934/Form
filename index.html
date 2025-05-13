@@ -95,38 +95,39 @@
     <button onclick="showList()">Registered Players</button>
   </div>
 
-  <div id="form-section">
-    <h2>Registration Form</h2>
-    <label for="name">Name</label>
-    <input type="text" id="name" placeholder="Enter player's name">
+<div id="form-section" style="display:none;">
+  <h2>Registration Form</h2>
+  <label for="name">Name</label>
+  <input type="text" id="name" placeholder="Enter player's name">
 
-    <label for="position">Position</label>
-    <select id="position">
-      <option value="">Select Position</option>
-      <option value="Goalkeeper">Goalkeeper</option>
-      <option value="Defender">Defender</option>
-      <option value="Mid Fielder">Mid Fielder</option>
-      <option value="Forward">Forward</option>
-    </select>
+  <label for="position">Position</label>
+  <select id="position">
+    <option value="">Select Position</option>
+    <option value="Goalkeeper">Goalkeeper</option>
+    <option value="Defender">Defender</option>
+    <option value="Mid Fielder">Mid Fielder</option>
+    <option value="Forward">Forward</option>
+  </select>
 
-    <label for="membership">Membership ID</label>
-    <input type="text" id="membership" placeholder="Enter membership ID">
+  <label for="membership">Membership ID</label>
+  <input type="text" id="membership" placeholder="Enter membership ID">
 
-    <button id="submit-btn" onclick="submitForm()" style="display:none">Submit</button>
-  </div>
+  <button id="submit-btn" onclick="submitForm()" style="display:none;">Submit</button>
+</div>
 
-  <div id="list-section">
-    <h2>Registered Players</h2>
-    <table id="players-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Position</th>
-        </tr>
-      </thead>
-      <tbody id="players-list"></tbody>
-    </table>
-  </div>
+<div id="list-section" style="display:none;">
+  <h2>Registered Players</h2>
+  <table id="players-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody id="players-list"></tbody>
+  </table>
+</div>
+
 
   <script>
     const firebaseConfig = {
